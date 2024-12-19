@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SetTimeout and clearTimeout</title>
+</head>
+
+<body>
+  <h1>A practice project for setTimeout and clearTimeout</h1>
+  <button id="startButton">START</button>
+  <button id="stopButton">STOP</button>
+</body>
+
+<!-- We will use two buttons(start and stop), start: to initiate a setInterval and Stop: to stop it  -->
+<script>
+   let startButton = document.querySelector('#startButton'); // Grab the Start button
+let stopButton = document.querySelector('#stopButton');  // Grab the Stop button
+
+let initiateInterval = null; // To store the interval ID
+
+// Start Button Logic
+startButton.addEventListener('click', function () {
+  if (initiateInterval === null) { // Check if no interval is running
+    initiateInterval = setInterval(function () {
+      console.log("Hello");
+    }, 2000);
+    console.log("Interval started!");
+  } else {
+    console.log("Interval is already running!");
+  }
+});
+
+// Stop Button Logic
+stopButton.addEventListener('click', function () {
+  if (initiateInterval !== null) { // Check if an interval is running
+    clearInterval(initiateInterval); // Stop the interval
+    initiateInterval = null; // Reset to allow starting again
+    console.log("STOP BUTTON CLICKED: Interval stopped.");
+  } else {
+    console.log("No interval to stop!");
+  }
+});
+
+ 
+</script>
+
+</html>

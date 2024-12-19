@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SetTimeout and clearTimeout</title>
+</head>
+
+<body>
+  <h1>A practice project for setTimeout and clearTimeout</h1>
+  <button id="button">STOP</button>
+</body>
+
+<!-- // We will try to change the innerHTML of the h1 tag using setTimeout -->
+<script>
+  // h1Tag variable to hold the first h1 tag in body
+  const h1Tag = document.querySelector('h1')
+  // variable expression used to run setTimeout
+  const setTimeOut = setTimeout(function () {
+    h1Tag.innerHTML = "We changed the innerHTML"
+    console.log('InnerHTML changed.')
+  },
+    3000)
+
+  // function expression to clear the above timeout
+  const stopTheSetTimeOut = function () {
+    clearTimeout(setTimeOut)
+    console.log('Change stopped from happening.')
+  }
+  // stop button is manipulated and an event is listened on it which triggers the above function.
+  document.querySelector('#button').addEventListener('click', stopTheSetTimeOut)
+
+</script>
+
+</html>

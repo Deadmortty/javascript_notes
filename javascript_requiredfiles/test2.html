@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Manipulation</title>
+</head>
+
+<body style="background-color: rgb(59, 112, 42);">
+  <div class="week" style="background-color: rgb(127, 201, 84); color: brown;">
+    <div class="day">Monday</div>
+    <div class="day">Tuesday</div>
+    <div class="day">Wednesday</div>
+    <div class="day">Thursday</div>
+  </div>
+
+
+</body>
+<script>
+  let parent = document.querySelector('.week')
+  console.log(parent);
+  console.log(parent.children[3].innerHTML);
+  
+  
+</script>
+
+</html>

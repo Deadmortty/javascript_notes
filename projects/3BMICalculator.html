@@ -91,7 +91,7 @@
     }
 
     h1 {
-      background-color: #453e3e;
+      background-color: #e6dcdc;
 
       color: #fff;
       text-align: center;
@@ -140,7 +140,74 @@
   </div>
 </body>
 <script>
+  // let height = parseInt(document.getElementById('height').valueOf)
+  // let weight = parseInt(document.getElementById('weight').valueOf)
+  // let results = document.getElementById('results')
+  // let submitButton = document.querySelector('button')
 
+
+  // let resultDisplay = function (event) {
+  //   event.preventDefault()
+
+  //   let heightInput = height
+  //   let weightInput = weight
+  //   results.style.color = 'white'
+  //   let BMI = weightInput / (heightInput / 100 * heightInput / 100)
+
+  //   if (BMI < 18.6) {
+  //     results.innerHTML = `Your BMI is ${BMI}, which means it's in under weight range.`
+  //   } else if (BMI = 18.6 || BMI <= 24.9) {
+  //     results.innerHTML = `Your BMI is ${BMI}, which means it's in normal weight range.`
+  //   } else if (BMI > 24.9) {
+  //     results.innerHTML = `Your BMI is ${BMI}, which means it's in over weight range.`
+  //   }
+
+  // }
+
+  // submitButton.addEventListener('click', resultDisplay)
+
+
+// let heightInputField = document.getElementById('height');
+// let weightInputField = document.getElementById('weight');
+// let results = document.getElementById('results');
+// let submitButton = document.querySelector('button');
+
+// let resultDisplay = function (event) {
+//   event.preventDefault();
+
+//   // Parse the current input values
+//   let height = parseInt(heightInputField.value);
+//   let weight = parseInt(weightInputField.value);
+
+//   if (isNaN(height) || isNaN(weight)) {
+//     results.style.color = 'red';
+//     results.innerHTML = 'Please enter valid numeric values for both height and weight.';
+//     return;
+//   }
+
+//   results.style.color = 'white';
+//   let BMI = weight / ((height / 100) * (height / 100));
+
+//   if (BMI < 18.6) {
+//     results.innerHTML = `Your BMI is ${BMI.toFixed(2)}, which means it's in the underweight range.`;
+//   } else if (BMI >= 18.6 && BMI <= 24.9) {
+//     results.innerHTML = `Your BMI is ${BMI.toFixed(2)}, which means it's in the normal weight range.`;
+//   } else if (BMI > 24.9) {
+//     results.innerHTML = `Your BMI is ${BMI.toFixed(2)}, which means it's in the overweight range.`;
+//   }
+// };
+
+// // Add event listener to the submit button
+// submitButton.addEventListener('click', resultDisplay);
+
+// // Clear input fields when clicked
+// heightInputField.addEventListener('focus', function () {
+//   heightInputField.value = '';
+// });
+
+// weightInputField.addEventListener('focus', function () {
+//   weightInputField.value = '';
+// });
 
 
 </script>
